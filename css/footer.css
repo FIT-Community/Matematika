@@ -1,0 +1,25 @@
+a
+{
+    text-decoration: none;
+    color: #999;
+    padding: 10px;
+}
+
+img
+{
+    height: 55px;
+    width: 55px;
+    
+}
+
+footer
+{
+    border-top: 1px solid #d5d5d5;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+
+footer ul
+{
+    display: flex;
+    list-style: none;
+}
