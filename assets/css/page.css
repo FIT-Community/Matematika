@@ -1,0 +1,19 @@
+h1#title
+{
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 10px;
+    color: #999;
+}
+
+div#posts
+{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.Post
+{
+    display: flex;
+    text-align: center;
+}
+
