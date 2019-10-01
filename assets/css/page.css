@@ -1,19 +1,27 @@
-h1#title
+h1#title, h2
 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 10px;
     color: #999;
 }
 
-div#posts
+div#postavke, div#rjesenja
 {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-.Post
+.Postavka, .Rjesenje
 {
     display: flex;
     text-align: center;
 }
 
+@media only screen and (max-width: 600px)
+{
+    div#postavke, div#rjesenja
+    {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}

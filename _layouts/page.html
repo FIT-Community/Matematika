@@ -7,19 +7,43 @@ layout: default
 <h1 id="title"> {{ page.title }} </h1>
 
 <div id="posts">
-{% for post in site.posts %}
-    {% if post.path contains site_name %}
-    <div class="Post">
-        <a href="{{ post.url }}">
-            <figure>
-                <img class="file-icon" src="/assets/img/html_file_icon.png" alt="file icon">
-                <figcaption>
-                    {{post.date | date: "%Y-%m-%d"}}<br>{{ post.title }}
-                </figcaption>
-            </figure>
-        </a>
-    </div> 
-    {% endif %}
-{% endfor %}
+    <h2>Postavke</h2>
+    <div id="postavke">
+        {% for post in site.posts %}
+            {% if post.path contains site_name %}
+                {% if post.path contains 'Postavka.html' %}
+                    <div class="Postavka">
+                        <a href="{{ post.url }}">
+                            <figure>
+                                <img class="file-icon" src="/assets/img/html_file_icon.png" alt="file icon">
+                                <figcaption>
+                                    {{post.date | date: "%Y-%m-%d"}}<br>{{ post.title }}
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    <h2>Rješenja</h2>
+    <div id="rjesenja">
+        {% for post in site.posts %}
+            {% if post.path contains site_name %}
+                {% if post.path contains 'Rješenje.html' %}
+                    <div class="Rjesenje">
+                        <a href="{{ post.url }}">
+                            <figure>
+                                <img class="file-icon" src="/assets/img/html_file_icon.png" alt="file icon">
+                                <figcaption>
+                                    {{post.date | date: "%Y-%m-%d"}}<br>{{ post.title }}
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>
 
