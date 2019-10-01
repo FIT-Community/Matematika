@@ -2,6 +2,6 @@ markdown: kramdown
 mathjax: true
 
 title: Matematika
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fitcommunity.github.io/Matematika"
+baseurl: "/Matematika" # the subpath of your site, e.g. /blog
+url: ""
 

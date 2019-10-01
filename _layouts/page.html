@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="/assets/css/page.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/page.css">
 {% assign site_name = {{page.title | replace: ' ', '-'}} %}
 
 <h1 id="title"> {{ page.title }} </h1>
@@ -15,7 +15,7 @@ layout: default
                     <div class="Postavka">
                         <a href="{{ post.url }}">
                             <figure>
-                                <img class="file-icon" src="/assets/img/html_file_icon.png" alt="file icon">
+                                <img class="file-icon" src="{{ site.baseurl }}/assets/img/html_file_icon.png" alt="file icon">
                                 <figcaption>
                                     {{post.date | date: "%Y-%m-%d"}}<br>{{ post.title }}
                                 </figcaption>
@@ -34,7 +34,7 @@ layout: default
                     <div class="Rjesenje">
                         <a href="{{ post.url }}">
                             <figure>
-                                <img class="file-icon" src="/assets/img/html_file_icon.png" alt="file icon">
+                                <img class="file-icon" src="{{ site.baseurl }}/assets/img/html_file_icon.png" alt="file icon">
                                 <figcaption>
                                     {{post.date | date: "%Y-%m-%d"}}<br>{{ post.title }}
                                 </figcaption>
