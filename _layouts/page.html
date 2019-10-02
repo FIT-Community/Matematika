@@ -2,7 +2,7 @@
 layout: default
 ---
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/page.css">
-{% assign site_name = {{page.title | replace: ' ', '-'}} %}
+{% assign site_name = page.title | replace: ' ', '-' %}
 
 <h1 id="title"> {{ page.title }} </h1>
 
@@ -13,7 +13,7 @@ layout: default
             {% if post.path contains site_name %}
                 {% if post.path contains 'Postavka.html' %}
                     <div class="Postavka">
-                        <a href="{{ post.url }}">
+                        <a href="{{ site.baseurl }}{{ post.url }}">
                             <figure>
                                 <img class="file-icon" src="{{ site.baseurl }}/assets/img/html_file_icon.png" alt="file icon">
                                 <figcaption>
@@ -30,9 +30,9 @@ layout: default
     <div id="rjesenja">
         {% for post in site.posts %}
             {% if post.path contains site_name %}
-                {% if post.path contains 'Rješenje.html' %}
+                {% if post.path contains 'Rjesenje.html' %}
                     <div class="Rjesenje">
-                        <a href="{{ post.url }}">
+                        <a href="{{ site.baseurl }}{{ post.url }}">
                             <figure>
                                 <img class="file-icon" src="{{ site.baseurl }}/assets/img/html_file_icon.png" alt="file icon">
                                 <figcaption>

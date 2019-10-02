@@ -1,5 +1,6 @@
 markdown: kramdown
 mathjax: true
+permalink: /:categories/:year/:month/:day/:slug/
 
 title: Matematika
 baseurl: "/Matematika" # the subpath of your site, e.g. /blog
