@@ -1,8 +1,9 @@
 markdown: kramdown
 mathjax: true
 permalink: /:categories/:year/:month/:day/:slug/
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]
 
 title: Matematika
-baseurl: "/Matematika" # the subpath of your site, e.g. /blog
+baseurl: "/Matematika"
 url: ""
 

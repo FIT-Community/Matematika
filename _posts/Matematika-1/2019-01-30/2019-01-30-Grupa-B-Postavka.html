@@ -1,0 +1,58 @@
+---
+layout: post
+categories: "Matematika-1"
+---
+
+
+<div class="Zadatak">
+    <p class="Tekst">1. Zapisati princip matematičke indukcije, na osnovu njega dokazati da važi tvrdnja</p>
+    $$  120 \mid n^5 - 5n^3 + 4n, n = 3,4,... $$
+</div>
+
+
+<div class="Zadatak">
+    <p class="Tekst">2. Ispisati tok i skicirati grafik funkcije:</p>
+    $$ f(x) = \ln\frac{2x-3}{x+7} $$
+</div>
+
+
+<div class="Zadatak Pod-Zadatak">
+    <p class="Tekst">3. Izračunati integrale:</p><br>
+    <div>$ a) \int{\arctan{x}dx} $</div>
+    <div>$ b) \int_{0}^{\ln{5}}{\frac{\sqrt{e^x-1}}{1+3e^{-x}}dx} $</div>
+</div>
+
+
+<div class="Zadatak">
+    <p class="Tekst">
+        4. Naći onu integralnu krivu diferencijalne jednačine 
+        $ xy^{'} - \frac{y}{x+1} = x $ koja prolazi tačkom (1, -1)
+    </p>
+</div>
+
+<div class="Zadatak">
+    <p class="Tekst">
+        5. Naći površinu ograničenu lukom krive $ y = (1 - x^2)\ln{(1 - x)} $ 
+        i pozitivnim dijelom x-ose vodeći računa o domenu funkcije
+    </p>
+    <script type="text/tikz">
+        \begin{tikzpicture}
+            \begin{axis}[
+                axis lines = middle,
+                xmin = -5.5,
+                xmax = 4.5,
+                xtick = {-5,...,4},
+                ymin = -3.5,
+                ymax = 4.5,
+                ytick = {-3,...,4},
+                grid = major
+            ]
+            \addplot[
+                black, 
+                no marks,
+                domain = -2:1
+            ]{(1 - x^2)*ln(1 - x)};
+            \end{axis}
+        \end{tikzpicture}
+    </script>
+</div>
