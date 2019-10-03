@@ -24,6 +24,12 @@ div.Pod-Zadatak
     grid-template-columns: 50% 50%;
 }
 
+div.Zadatak img
+{
+    width: 250px;
+    height: 250px;
+}
+
 .autor
 {
     padding-left: 10px;
@@ -34,4 +40,5 @@ div.Pod-Zadatak
 {
     width: 100%;
 }
+
 
