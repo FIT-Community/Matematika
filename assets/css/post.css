@@ -41,4 +41,23 @@ div.Zadatak img
     width: 100%;
 }
 
+@media only screen and (max-width: 600px)
+{
+    #title
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.Pod-Zadatak
+    {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    div.Pod-Zadatak div
+    {
+        margin: 10px;
+    }
+}
 

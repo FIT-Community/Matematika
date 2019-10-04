@@ -5,7 +5,10 @@ layout: default
 <link rel="stylesheet" href="{{site.baseurl}}/assets/css/post.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1 id="title">{{page.date | date: "%Y-%m-%d"}} {{ page.title }}</h1>
+<h1 id="title">
+  <span id="date">{{page.date | date: "%Y-%m-%d"}}</span> 
+  <span id="title">{{ page.title }}</span>
+</h1>
 
 <div class="post">
   {{ content }}

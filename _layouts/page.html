@@ -5,7 +5,7 @@ layout: default
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% assign site_name = page.title | replace: ' ', '-' %}
 
-<h1 id="title"> {{ page.title }} </h1>
+<h1 id="title"> {{page.date | date: "%Y-%m-%d"}}<br>{{ page.name }} </h1>
 
 <div id="posts">
     <h2>Postavke</h2>
